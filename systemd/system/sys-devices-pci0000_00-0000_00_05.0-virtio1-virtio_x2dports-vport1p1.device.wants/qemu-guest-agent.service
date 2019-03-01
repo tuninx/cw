@@ -1,0 +1,17 @@
+[Unit]
+Description=QEMU Guest Agent startup script
+Documentation=https://wiki.qemu.org/Features/GuestAgent
+BindsTo=sys-devices-pci0000:00-0000:00:05.0-virtio1-virtio\x2dports-vport1p1.device
+After=sys-devices-pci0000:00-0000:00:05.0-virtio1-virtio\x2dports-vport1p1.device
+IgnoreOnIsolate=True
+
+[Service]
+ExecStart=/usr/sbin/qemu-ga \
+  --method=virtio-serial \
+  --path=/dev/virtio-ports/org.qemu.guest_agent.0
+StandardError=syslog
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=sys-devices-pci0000:00-0000:00:05.0-virtio1-virtio\x2dports-vport1p1.device

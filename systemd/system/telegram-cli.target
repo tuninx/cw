@@ -1,0 +1,20 @@
+[Unit]
+Wants = telegram-cli@1337.service
+Wants = telegram-cli@1338.service
+Wants = telegram-cli@1339.service
+Wants = telegram-cli@1340.service
+Wants = telegram-cli@1341.service
+Wants = telegram-cli@1342.service
+Wants = telegram-cli@1343.service
+Wants = telegram-cli@1344.service
+Wants = telegram-cli@1345.service
+Wants = telegram-cli@1346.service
+Wants = telegram-cli@1347.service
+Wants = telegram-cli@1348.service
+Wants = telegram-cli@1349.service
+Wants = telegram-cli@1350.service
+Wants = telegram-cli@1351.service
+Wants = telegram-cli@1352.service
+
+[Install]
+WantedBy = multi-user.target

@@ -1,0 +1,20 @@
+[Unit]
+Wants = telegram-bot@1337.service
+Wants = telegram-bot@1338.service
+Wants = telegram-bot@1339.service
+Wants = telegram-bot@1340.service
+Wants = telegram-bot@1341.service
+Wants = telegram-bot@1342.service
+Wants = telegram-bot@1343.service
+Wants = telegram-bot@1344.service
+Wants = telegram-bot@1345.service
+Wants = telegram-bot@1346.service
+Wants = telegram-bot@1347.service
+Wants = telegram-bot@1348.service
+Wants = telegram-bot@1349.service
+Wants = telegram-bot@1350.service
+Wants = telegram-bot@1351.service
+Wants = telegram-bot@1352.service
+
+[Install]
+WantedBy = multi-user.target

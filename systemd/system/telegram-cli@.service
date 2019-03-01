@@ -1,0 +1,7 @@
+[Unit]
+Description = Telegram cli with profile number %I
+PartOf = telegram-cli.target
+
+[Service]
+Type = simple
+ExecStart = /usr/local/bin/tg/bin/telegram-cli -W --json -p profile_%I -P %I

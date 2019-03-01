@@ -1,0 +1,7 @@
+[Unit]
+Description = Telegram bot with profile number %I
+PartOf = telegram-bot.target
+
+[Service]
+Type = simple
+ExecStart = /usr/bin/python3 /usr/local/bin/main/main.py --admin CRAIDDO --order CRAIDDO --port %I
